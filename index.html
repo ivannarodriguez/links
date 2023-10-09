@@ -11,12 +11,12 @@
       @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Josefin+Sans:wght@200&family=Yeseva+One&display=swap');
 
       body {
-        font-family:'Courier Prime', monospace;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        /* background-color: #2d807b72; */
+        font-family: 'Courier Prime', monospace;
+        margin: 0; /* Remove default margin to fill the entire viewport */
+        padding: 0; /* Remove default padding */
         background: linear-gradient(to bottom, #2d807b72, #ffcc0050);
         display: flex;
+        min-height: 100vh; /* Ensure the body fills the viewport height */
         justify-content: center;
       }
     
@@ -49,12 +49,14 @@
         font-weight: bold;
         justify-content: center;
       }
-      
+
       .link {
-        background-color: #fffffe;
+        background-color: rgba(255, 255, 254, 0.8);
         display: flex;
         align-items: center;
         transition: box-shadow 0.3s ease;
+        height: 50px;
+        justify-content: center;
       }
 
       .link:hover {
@@ -70,6 +72,7 @@
 
       .items {
         display: flex;
+        padding-top: 40px;
         flex-direction: column;
         gap: 30px;
         max-width: 640px;
@@ -86,7 +89,7 @@
         <img src="/thumbnails/possum.png" alt="night oppossum by log" class="banner-image">
       </div>
 
-      <div class="name">Ivanna Rodríguez</div>
+      <div class="name typewriter">Ivanna Rodríguez</div>
 
       <div class="link">
         <img src="thumbnails/linkedin.png" class="thumbnail">
@@ -104,11 +107,10 @@
 
       <div class="link">
         <img
-          src="https://media.newyorker.com/photos/59096d451c7a8e33fb38e4ca/16:9/w_1280,c_limit/071210_r16884_p646.jpg"
+          src="thumbnails/back-in-time.png"
           class="thumbnail">
 
-        <a target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">A
-          Life-Saving Checklist — The New Yorker</a>
+        <a target="_blank" href="https://ivannarodriguez.github.io/opt_timeline/">OPT Timeline: for international students in the US</a>
       </div>
 
     </div>
